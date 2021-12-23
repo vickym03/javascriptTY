@@ -127,3 +127,5 @@ for(var index in pens){
     }
 }
 
+
+    // console.log(pens[0].price)
