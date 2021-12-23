@@ -50,3 +50,18 @@ console.log("------------IIFE function--------------------");
 ) (-7)
 
 
+console.log("------------Arrow function--------------------");
+
+var anyoFun =  (num)=>{
+    if(num<2)
+    return(`${num} is a  NOT-Prime Number`)
+    for(var i=2;i<num;i++)
+    {
+        if(num%i==0){
+    return(`${num} is a  NOT-Prime Number`);
+    }
+    }
+    return(`${num} is a Prime Number`);
+}
+var result1 = anyoFun(7);
+console.log(result1)
