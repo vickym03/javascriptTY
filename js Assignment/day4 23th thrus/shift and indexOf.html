@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shift and indexOf</title>
+</head>
+<body>
+    <script>
+        console.log("=========================1");
+        let hobbies1= ["eating", "writing","killing+ant","kicking" ,"jumbing","watching"];
+        let hobbiesUn1 = hobbies1.shift()
+        console.log(hobbiesUn1);// eating
+        console.log(hobbies1);//(3) ['writing', 'jumbing', 'watching']
+        console.log(hobbies1.indexOf("jumbing",0));// 3
+        
+        console.log("=========================2");
+        let hobbies2= ["eating- a dosa", "writing mvie", "sleeping", "jumbing in parkk","swimming in pool"]
+        let hobbiesUn2 = hobbies2.shift();
+        console.log(hobbiesUn2);//eating- a dosa
+        console.log(hobbies2);//(4) ['writing mvie', 'sleeping', 'jumbing in parkk', 'swimming in pool']
+        console.log(hobbies2.indexOf(100,5));//-1
+
+        console.log("=========================3");
+        let hobbies3= [288,388,488,588,688,090,8777]
+        let hobbiesUn3 = hobbies3.shift();
+        console.log(hobbiesUn3);//288
+        console.log(hobbies3);//(6) [388, 488, 588, 688, 90, 8777]
+        console.log(hobbies3.indexOf(900,10));//-1
+
+        console.log("=========================4");
+        let hobbies4=["Deployed into floor!","lee", "tim" ,"hond","oppo","realme","nokia"]
+        let hobbiesUn4 = hobbies4.shift();
+        console.log(hobbiesUn4);//Deployed into floor!
+        console.log(hobbies4);//(6) ['lee', 'tim', 'hond', 'oppo', 'realme', 'nokia']
+        console.log(hobbies4.indexOf("nokia",5));//5
+
+
+        console.log("=========================5");
+        let hobbies5=["oppo","realme","nokia","Deployed into floor!","lee", "tim" ,99,000,67,98,1009,"hond"]
+        let hobbiesUn5 = hobbies5.shift();
+        console.log(hobbiesUn5);//oppo
+        console.log(hobbies5);//(11) ['realme', 'nokia', 'Deployed into floor!', 'lee', 'tim', 99, 0, 67, 98, 1009, 'hond']
+        console.log(hobbies5.indexOf("hond",5));//10
+
+
+
+    </script>
+</body>
+</html>

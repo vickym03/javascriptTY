@@ -1,0 +1,17 @@
+.labelTag{
+    color:  red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.labelBg{
+    background-color: darkblue;
+    border: 3px solid rgba(199, 24, 176, 0.973);
+}
+
+#namelist{
+    /* visibility: hidden; */
+    /* space required by the elements will be preseved*/
+    display: none;
+ /* space required by the elements will not be preseved*/
+}

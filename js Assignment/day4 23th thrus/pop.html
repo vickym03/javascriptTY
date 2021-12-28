@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop</title>
+</head>
+<body>
+ <script>
+         let hobbies= ["eating", "writing", "jumbing","watching"]
+         let hobbiesP1 = hobbies.pop()
+         console.log(hobbiesP1); //watching
+         console.log(hobbies); //(3) ['eating', 'writing', 'jumbing']
+         console.log("==================================================");
+
+         let hobbies1= ["eating", "writing", "jumbing"," bird-watching"]
+         let hobbiesP2 = hobbies1.pop()
+         console.log(hobbiesP2); //bird-watching
+         console.log(hobbies1);//(3) ['eating', 'writing', 'jumbing']
+         console.log("==================================================");
+
+         let hobbies2= ["eating- a book", "writing mvie", "jumbing in parkk","swimming in pool"]
+        const hobbiesP3= hobbies2.pop()
+        console.log(hobbiesP3);//swimming in pool
+        console.log(hobbies2);//(3) ['eating- a book', 'writing mvie', 'jumbing in parkk']
+        console.log("==================================================");
+
+        let hobbies3= [288,388,488,588,688]
+        const hobbiesP4= hobbies3.pop();
+        console.log(hobbiesP4); //688
+        console.log(hobbies3);//(4) [288, 388, 488, 588]
+        console.log("-------------------------------------------------");
+        
+        let hobbies5= ["lee", "tim" ,"hond","oppo"]
+      const hobbiesP5= hobbies5.pop();
+      console.log("poped", hobbiesP5);//poped oppo
+      console.log(hobbies5);//(3) ['lee', 'tim', 'hond']
+        
+ </script>
+</body>
+</html>

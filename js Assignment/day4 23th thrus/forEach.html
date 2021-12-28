@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+<body>
+   <script>
+       let hobbies= ["eating", "writing", "jumbing","watching"]
+       hobbies.forEach(function(val,ind,arr){
+           console.log(`${val} -- ${ind} || ${arr}`);
+       })
+        console.log("===========2============");
+
+        let movies1= ["mankatha", "billa ", "amrakalam","veeram"]
+       movies1.forEach(function(val,ind,arr){
+           console.log(`${val} -- ${ind} || ${arr}`);
+       })
+        console.log("===========3============");
+
+        let hobbies1= ["playing", "shooting", "singing","beat boxing"]
+       hobbies1.forEach(function(val,ind,arr){
+           console.log(`${val} -- ${ind} || ${arr}`);
+       })
+        console.log("=========4==============");
+
+        let num= [900,800,700,600,500,400,300,200,100,0100]
+    num.forEach(function(val,ind,arr){
+           console.log(`${val} -- ${ind} `);
+       })
+        console.log("=============5==========");
+
+        let hobb= ["eating", "writing", "jumbing",{key:"value"},function(){return hobb[3]}];
+        hobb.forEach(function(val,ind,arr){
+           console.log(`${val} -- ${ind} `);
+       })
+        
+   </script>
+</body>
+</html>

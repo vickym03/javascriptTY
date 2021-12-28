@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unshift and includes</title>
+</head>
+<body>
+    <script>
+        console.log("=========================1");
+        let hobbies1= ["eating", "writing", "jumbing","watching"];
+        let hobbiesUn1 = hobbies1.unshift("driving");
+        console.log(hobbiesUn1);//5
+        console.log(hobbies1);//(5) ['driving', 'eating', 'writing', 'jumbing', 'watching']
+        console.log(hobbies1.includes("eating",1));//true
+
+        console.log("=========================2");
+        let hobbies2= ["eating- a book", "writing mvie", "sleeping", "jumbing in parkk","swimming in pool"]
+        let hobbiesUn2 = hobbies2.unshift("flyinng!");
+        console.log(hobbiesUn2);//6
+        console.log(hobbies2);//(6) ['flyinng!', 'eating- a book', 'writing mvie', 'sleeping', 'jumbing in parkk', 'swimming in pool']
+        console.log(hobbies2.includes(100,5));//false
+
+        console.log("=========================3");
+        let hobbies3= [288,388,488,588,688,090,8777]
+        let hobbiesUn3 = hobbies3.unshift("get into project!");
+        console.log(hobbiesUn3);//8
+        console.log(hobbies3);//(8) ['get into project!', 288, 388, 488, 588, 688, 90, 8777]
+        console.log(hobbies3.includes(90,0));//true
+
+        console.log("=========================4");
+        let hobbies4=["lee", "tim" ,"hond","oppo","realme","nokia"]
+        let hobbiesUn4 = hobbies4.unshift("Deployed into floor!");
+        console.log(hobbiesUn4);//7
+        console.log(hobbies4);//(7) ['Deployed into floor!', 'lee', 'tim', 'hond', 'oppo', 'realme', 'nokia']
+        console.log(hobbies4.includes("nokia",9));//false
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrayisArray</title>
+</head>
+<body>
+    <script>
+        let arr1 = {
+            name:"tim",
+            age:24
+        }
+    console.log(Array.isArray(arr1));//false
+    console.log("+++++++++++++++++++++++++++++++++++++++++++++++++");
+
+    let hobbies1= ["eating", "writing","killing+ant","kicking" ,"jumbing","watching"];
+    console.log(Array.isArray(hobbies1));//true
+    console.log("+++++++++++++++++++++++++++++++++++++++++++++++++");
+
+    let arr2=[{
+        name:"tim",
+            age:24
+    },
+    {
+        name1:"Rose",
+            age1:87
+    },
+    {
+        name2:"Like",
+            age2:09
+    }
+]
+console.log(Array.isArray(arr2));//true
+
+console.log("+++++++++++++++++++++++++++++++++++++++++++++++++");
+
+let hobbies3= [288,388,488,588,688,090,8777]
+console.log(Array.isArray(hobbies3));//true
+console.log("+++++++++++++++++++++++++++++++++++++++++++++++++");
+
+const arr3= [23,98,98,[67,"hello"],[[[56,09,01]]]];
+console.log(Array.isArray(arr2));//true
+
+    
+
+    </script>
+</body>
+</html>
