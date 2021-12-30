@@ -1,0 +1,12 @@
+{
+    "firstName":"Tim",
+    "lastName":"David",
+    "age":"13",
+    "isAdult":"false",
+    "hobbies":["cricket","singing"],
+    "address":{
+        "pinCode":"560054",
+        "state":"karantaka",
+        "city":"banglaor"
+    }
+}
