@@ -17,7 +17,7 @@ console.log("firstname",firstName)
 console.log("lastname", lastName)
 
 //multi level
-
+ul
 const {hobbies, address: {state, city}} =person;
 console.log("hobbies",hobbies )
 console.log("state",state )
@@ -66,7 +66,7 @@ console.log(fruits2)
 console.log("---------------------------------------------")
 
 
-const[fruitOne, fruitTwo] = fruits
+const[fruitOne, ,fruitTwo] = fruits
 console.log(fruitOne)
 console.log(fruitTwo)
 console.log("---------------------------------------------")

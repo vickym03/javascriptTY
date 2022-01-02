@@ -25,10 +25,14 @@ addFour(1, 5, 7, 88);
 function addAll(...nums) {
   console.log(nums);
   let total = 0;
-  for (let i = 0; i < nums.length; i++) {
-    total += nums[i];
-  }
-  console.log("total", total);
+
+  nums.map((d)=>{
+    total+=d
+  })
+  // for (let i = 0; i < nums.length; i++) {
+  //   total += nums[i];
+  // }
+   console.log("total", total );
 }
 addAll(10,20);
 addAll(10,20,30)
