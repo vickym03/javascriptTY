@@ -17,6 +17,8 @@ it will combine the resolved data into array
 if any one promise is rejected also catch function will be executed
 */
 
+consol.log("----------------------------------promise.all")
+
 Promise.all([myPromise1,myPromise2]).then((data) =>{
     console.log("data", data);
 }).catch(err =>{
@@ -30,6 +32,8 @@ Promise.race([myPromise1,myPromise2]).then((data) =>{
 }).catch(err =>{
     console.log("Err", err)
 })
+
+
 
 console.log("ended")
 

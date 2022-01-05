@@ -105,16 +105,18 @@ const movieCopy ={
     moreDetails:{...movie.moreDetails}
 }
 
-movie.director='upendra'
-console.log(movie.director) //upendra
-console.log(movieCopy.director) // john watts
+movieCopy.director='upendra'
+console.log(movie.director) //john watts
+console.log(movieCopy.director) // upendra 
 
 console.log("-------------------------------------------")
 
-movie.moreDetails.heroin ="Ramya";
-console.log(movie.moreDetails.heroin) //ramya
-console.log(movieCopy.moreDetails.heroin) // Zendya
+movieCopy.moreDetails.heroin ="Ramya";
+console.log(movie.moreDetails.heroin) // Zendya
+console.log(movieCopy.moreDetails.heroin) //ramya
 
+console.log(movie)
+console.log(movieCopy)
 console.log("-------------------------------------------")
 
 const bike ={
@@ -130,10 +132,10 @@ const bike ={
 //deep copy of an Object/Array
 // all the levels of aobject/ array will be copied
 //i.e , new object/array will be created
-const bikeDeeoCopy = JSON.parse(JSON.stringify(bike))
+const bikeDeepCopy = JSON.parse(JSON.stringify(bike))
 bike.engineDetails.cc = '250cc';
 console.log(bike.engineDetails.cc); // 250cc
-console.log(bikeDeeoCopy.engineDetails.cc); // 200cc
+console.log(bikeDeepCopy.engineDetails.cc); // 200cc
 
 console.log("----------------------")
 

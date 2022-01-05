@@ -1,8 +1,8 @@
-var nam = ['tim', 'lee', 'jack', 676 , 878 ];
+var nam = ['tim', 'lee', 'jack', 676, 878];
 
-for (var i=0;i<nam.length;i++){
+for (var i = 0; i < nam.length; i++) {
     // debugger
-    console.log ( i + " "+ nam[i])
+    console.log(i + " " + nam[i])
 }
 
 
@@ -41,26 +41,26 @@ console.log("================")
 var books = [
 
     {
-        author:'cheatan bhagath',
-        title:' Two States',
+        author: 'cheatan bhagath',
+        title: ' Two States',
         price: 80,
-        noOfPages:265,
+        noOfPages: 265,
         publishers: 'spana'
     },
 
     {
-        author:' Apj Kalam',
-        title:' Wings of fire',
-        price:425,
+        author: ' Apj Kalam',
+        title: ' Wings of fire',
+        price: 425,
         noOfPages: 300,
         publishers: 'Abj'
     },
 
     {
-        author:' pooranaCharandra Tejaswi',
-        title:' Chidamabara rahasya',
+        author: ' pooranaCharandra Tejaswi',
+        title: ' Chidamabara rahasya',
         price: 600,
-        noOfPages:545,
+        noOfPages: 545,
         publishers: 'sanitya Bhandra'
     }
 ]
@@ -71,7 +71,7 @@ var books = [
 //     console.log(books[i].author)
 // }
 
-for (var book of books){
+for (var book of books) {
     console.log(book.author);
 }
 

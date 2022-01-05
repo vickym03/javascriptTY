@@ -10,7 +10,7 @@ const validAgePromise = new Promise((resolve,reject)=>{
     }
 })
 
-validAgePromise.then((success)=>{
+validAgePromise.then(success=>{
     console.log(success);
 })
 validAgePromise.catch(err=>{
@@ -18,3 +18,5 @@ validAgePromise.catch(err=>{
 });
 
 console.log("program ended")
+
+

@@ -9,7 +9,9 @@ function outer(){
     }
     return inner
 }
-
+//function curring
+// outer()()
+// outer()()
 // only inner executes but not outer function
 const innerfun = outer()
 innerfun()
@@ -17,8 +19,7 @@ innerfun()
 innerfun()
 innerfun()
 
-//function curring
- outer()()
+
 
 
  // wat is the use of clouser? why we use closure?
