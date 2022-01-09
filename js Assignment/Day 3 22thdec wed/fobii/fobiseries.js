@@ -14,7 +14,7 @@ function Febbonaci(n)
     f2=next;
   }   
 }
-Febbonaci(10)
+Febbonaci(5)
 
 
 console.log("---------------Annonymus function------------------");
